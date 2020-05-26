@@ -1,0 +1,15 @@
+DEBUG:bunyan:Look like rain
+INFO:bunyan:And hail
+WARNING:bunyan:Did I hear thunder?
+ERROR:bunyan:Was that lightning
+CRITICAL:bunyan:Stop fencing and get inside!
+DEBUG:bunyan:Look like rain
+INFO:bunyan:And hail
+WARNING:bunyan:Did I hear thunder?
+ERROR:bunyan:Was that lightning
+CRITICAL:bunyan:Stop fencing and get inside!
+2020-05-14 00:59:15,628 DEBUG 12 Look like rain
+2020-05-14 00:59:15,628 INFO 14 And hail
+2020-05-14 00:59:15,629 WARNING 16 Did I hear thunder?
+2020-05-14 00:59:15,629 ERROR 18 Was that lightning
+2020-05-14 00:59:15,629 CRITICAL 20 Stop fencing and get inside!

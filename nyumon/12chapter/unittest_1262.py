@@ -1,0 +1,40 @@
+'''
+Unit テスト
+'''
+import unittest
+import cap
+
+class TestCap(unittest.TestCase):
+    
+    def setUp(self):
+        "テストメソッドの前に呼ばれる テストで必要なリソースを確保する、DBの接続なども"
+        pass
+
+    def tearDown(self):
+        "テストメソッドの後に呼ばれる　テストで使用したリソースを開放する"
+        pass
+
+    def test_one_word(self):
+        text = 'duck'
+        result = cap.just_do_it(text)
+        self.assertEqual(result, 'Duck')
+
+    def test_multiple_words(self):
+        text = 'a vertiable flock of ducks'
+        result = cap.just_do_it(text)
+        self.assertEqual(result, 'A Vertiable Flock Of Ducks')
+
+    def test_words_with_apostrophes(self):
+        text = "I'm fresh out of ideas"
+        result = cap.just_do_it(text)
+        self.assertEqual(result, "I'm Fresh Out Of Ideas")
+
+    def test_words_with_quotes(self):
+        "4番目のテストだけこける"
+        text = "\"You're despicable,\" said Daffy Duck"
+        result = cap.just_do_it(text)
+        self.assertEqual(result, "\"You're Despicable,\" Said Daffy Duck")
+
+
+if __name__ == '__main__':
+    unittest.main()
