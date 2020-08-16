@@ -5,8 +5,9 @@ strlen = len(mystr)
 
 print("Len:{0}".format(strlen))
 
-print("mystr:{0}".format(dir(mystr)))
-print("dir:{0}".format(dir()))
+#print("mystr:{0}".format(dir(mystr)))
+
+#print("dir:{0}".format(dir()))
 print("mystr.title:{0}".format(mystr.title()))
 
 print("mystr.__add__:{0}".format(mystr.__add__))
